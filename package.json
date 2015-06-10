@@ -1,0 +1,35 @@
+{
+  "name": "httpproxy",
+  "version": "0.1.0",
+  "description": "cli tool for http proxy and mock",
+  "main": "bin/httpproxy.js",
+  "bin": {
+    "httpproxy": "bin/httpproxy.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "DEBUG=httpproxy:* node bin/httpproxy -p 10086 -i add -c ./test/fixture/config.json",
+    "test": "mocha"
+  },
+  "repository": "coderhaoxin/httpproxy",
+  "keywords": [
+    "proxy",
+    "http",
+    "cli"
+  ],
+  "author": "haoxin",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "1",
+    "commander": "2",
+    "debug": "2",
+    "path-to-regexp": "1"
+  },
+  "devDependencies": {
+    "koa": "0",
+    "mocha": "2",
+    "supertest": "1"
+  }
+}
