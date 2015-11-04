@@ -1,13 +1,11 @@
 {
   "name": "httpproxy",
+  "private": true,
   "version": "0.1.0",
   "description": "cli tool for http proxy and mock",
   "main": "bin/httpproxy.js",
   "bin": {
     "httpproxy": "bin/httpproxy.js"
-  },
-  "directories": {
-    "test": "test"
   },
   "scripts": {
     "start": "DEBUG=httpproxy:* node bin/httpproxy -p 10086 -i add -c ./test/fixture/config.json",

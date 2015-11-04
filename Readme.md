@@ -1,6 +1,5 @@
-### httpproxy
 
-* http proxy
+deprecated
 
 ### License
 MIT
